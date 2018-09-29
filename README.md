@@ -2,7 +2,7 @@
 
 UML editor made in [Qt](https://www.qt.io) which allows to create diagrams: Class diagram, Use case diagram and State diagram, setting relationship between diagram elements, and save diagram to file. 
 
-The project was part of my course work on the 2rd year studying in university. So original plan was to support other types of UML diagrams and implement AI to analyse used diagrams to make suggestion to improve them and generate source code in selected programming language.
+The project was part of my course work on the 2nd year studying in university. So original plan was to support other types of UML diagrams and implement AI to analyse used diagrams to make suggestion to improve them and generate source code in selected programming language.
 
 ## Folders structure
 
