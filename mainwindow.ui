@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>659</width>
+    <height>467</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UML 2.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Resours.qrc">
+    <normaloff>:/russianfederation.png</normaloff>:/russianfederation.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_4" columnstretch="2,5">
+      <item row="0" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="elems">
+         <property name="font">
+          <font>
+           <family>Comic Sans MS</family>
+          </font>
+         </property>
+         <attribute name="title">
+          <string>Диаграммы классов</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="automation">
+         <attribute name="title">
+          <string>Диаграмма состояний</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="use_case">
+         <attribute name="title">
+          <string>Диаграмма вариантов использования</string>
+         </attribute>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="acceptDrops">
+         <bool>true</bool>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="interactive">
+         <bool>true</bool>
+        </property>
+        <property name="renderHints">
+         <set>QPainter::NonCosmeticDefaultPen</set>
+        </property>
+        <property name="dragMode">
+         <enum>QGraphicsView::RubberBandDrag</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>659</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="tearOffEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>&amp;Файл</string>
+    </property>
+    <addaction name="New"/>
+    <addaction name="Open"/>
+    <addaction name="Save"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>&amp;Помощь</string>
+    </property>
+    <property name="separatorsCollapsible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="Del_Fro_Back_ToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="On_front"/>
+   <addaction name="On_back"/>
+   <addaction name="On_delete"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="Text_ToolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="Bold"/>
+   <addaction name="Italic"/>
+   <addaction name="Underline"/>
+  </widget>
+  <widget class="QToolBar" name="Mode_ToolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="On_front">
+   <property name="icon">
+    <iconset resource="Resours.qrc">
+     <normaloff>:/applications-internet.png</normaloff>:/applications-internet.png</iconset>
+   </property>
+   <property name="text">
+    <string>На передний план</string>
+   </property>
+   <property name="toolTip">
+    <string>Переместить выбранную фигуру на передний план</string>
+   </property>
+   <property name="shortcut">
+    <string>Q</string>
+   </property>
+  </action>
+  <action name="On_back">
+   <property name="icon">
+    <iconset resource="Resours.qrc">
+     <normaloff>:/package_network.png</normaloff>:/package_network.png</iconset>
+   </property>
+   <property name="text">
+    <string>На задний план</string>
+   </property>
+   <property name="toolTip">
+    <string>Переместить выбранную фигуру на задний план</string>
+   </property>
+   <property name="shortcut">
+    <string>E</string>
+   </property>
+  </action>
+  <action name="On_delete">
+   <property name="icon">
+    <iconset resource="Resours.qrc">
+     <normaloff>:/trash-full.png</normaloff>:/trash-full.png</iconset>
+   </property>
+   <property name="text">
+    <string>Удалить</string>
+   </property>
+   <property name="toolTip">
+    <string>Удалить выбранную фигуру</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="Bold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Resours.qrc">
+     <normaloff>:/format-text-bold.png</normaloff>:/format-text-bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>Жирный</string>
+   </property>
+   <property name="toolTip">
+    <string>Жирный текст</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="Underline">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Resours.qrc">
+     <normaloff>:/underlined-u.png</normaloff>:/underlined-u.png</iconset>
+   </property>
+   <property name="text">
+    <string>Подчеркнутый</string>
+   </property>
+   <property name="toolTip">
+    <string>Подчеркнутый текст</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="Italic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Resours.qrc">
+     <normaloff>:/format-text-italic.png</normaloff>:/format-text-italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>Курсив</string>
+   </property>
+   <property name="toolTip">
+    <string>Курсивный текст</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="New">
+   <property name="icon">
+    <iconset resource="Resours.qrc">
+     <normaloff>:/New.png</normaloff>:/New.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Создать</string>
+   </property>
+   <property name="toolTip">
+    <string>Создать новый файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="Open">
+   <property name="icon">
+    <iconset resource="Resours.qrc">
+     <normaloff>:/Open.png</normaloff>:/Open.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Открыть</string>
+   </property>
+   <property name="toolTip">
+    <string>Открыть файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="Save">
+   <property name="icon">
+    <iconset resource="Resours.qrc">
+     <normaloff>:/Save.png</normaloff>:/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Сохранить</string>
+   </property>
+   <property name="toolTip">
+    <string>Сохранить файл</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Resours.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>applications-internet.png</file>
+        <file>package_network.png</file>
+        <file>trash-full.png</file>
+        <file>format-text-bold.png</file>
+        <file>format-text-italic.png</file>
+        <file>underlined-u.png</file>
+        <file>russianfederation.png</file>
+        <file>move.png</file>
+        <file>arrow.png</file>
+        <file>text.png</file>
+        <file>dependency-right.png</file>
+        <file>association-right.png</file>
+        <file>aggregation-left.png</file>
+        <file>generalization.png</file>
+        <file>composition-left.png</file>
+        <file>extend.png</file>
+        <file>include.png</file>
+        <file>begin_state.png</file>
+        <file>final-state.png</file>
+        <file>New.png</file>
+        <file>Open.png</file>
+        <file>Save.png</file>
+        <file>Warning.png</file>
+        <file>Label.png</file>
+        <file>deep-history-state.png</file>
+        <file>join-state.png</file>
+        <file>shallow-history-state.png</file>
+        <file>main.ico</file>
+    </qresource>
+</RCC>
